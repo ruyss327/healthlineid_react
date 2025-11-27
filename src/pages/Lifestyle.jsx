@@ -1,14 +1,33 @@
+
+
+import React from 'react';
+
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import './Lifestyle.css';
+import './Lifestyle.css'; 
+
+
+import MakananSehat from '../assets/Makanan Sehat.jpg';
+import OlahragaRutin from '../assets/Olahraga Rutin.jpg';
+import MengurangiStress from '../assets/Mengurangi Stress.jpg';
+import IstirahatCukup from '../assets/Istirahat Cukup.jpg';
+import MemeriksaKesehatan from '../assets/Memeriksa Kesehatan.jpg';
 
 const Lifestyle = () => {
   return (
     <>
-      <Navbar />
-      <Hero title="Gaya Hidup Sehat" subtitle="Kunci kesejahteraan tubuh dan pikiran untuk hidup lebih berkualitas 🌿" />
-      <main className="content">
+      
+      <Navbar activePage="lifestyle" /> 
+      
+      
+      <Hero 
+        title="Gaya Hidup Sehat" 
+        subtitle="Kunci kesejahteraan tubuh dan pikiran untuk hidup lebih berkualitas 🌿" 
+      />
+      
+      
+      <main className="content lifestyle"> 
         <section>
           <p>
             Semua orang pasti ingin selalu sehat dan terhindar dari berbagai penyakit. Sebab, dengan tubuh dan pikiran yang selalu sehat, kesejahteraan dan kualitas hidup tentunya juga dapat meningkat. Menjaga kesehatan pun nyatanya tidak sesulit yang dibayangkan, salah satunya adalah dengan menerapkan gaya hidup sehat setiap hari. Gaya hidup sehat adalah sebuah komitmen jangka panjang untuk menjaga atau melakukan beberapa hal agar mampu mendukung fungsi tubuh, sehingga berdampak baik bagi kesehatan.
@@ -28,78 +47,63 @@ const Lifestyle = () => {
         <section>
           <h2>Langkah yang Dapat Dilakukan untuk Memulai Gaya Hidup Sehat</h2>
 
+          
           <h3>1. Konsumsi Makanan Sehat Bergizi Seimbang</h3>
+          <img src={MakananSehat} alt="Ilustrasi Makanan Sehat" /> 
           <p>
-           Ini adalah cara hidup sehat yang sayangnya cukup sulit diterapkan, padahal penting untuk menjaga asupan gizi yang masuk ke dalam tubuh. Ini termasuk protein, karbohidrat, serat, mineral dan vitamin.
-
-           Hal ini sangatlah vital, supaya tubuh dapat tumbuh, berkembang, serta menjalankan fungsinya dengan maksimal.
-
-           Tidak hanya itu, cara pengolahan makanan pun wajib diperhatikan agar tidak merusak zat gizi di dalamnya, sehingga makanan yang dikonsumsi tetap memberi manfaat.
-
-           Jika kamu masih terjebak dalam kebiasaan pola makan yang tidak sehat, mulailah dengan mendata semua makanan yang dikonsumsi setiap hari.
-
-           Catatan ini berguna sebagai pengingat agar kamu dapat membatasi atau menambahkan konsumsinya.
-
-           Tidak hanya itu, kamu juga bisa memilih makanan yang alami, atau dalam proses pembuatannya tidak ada zat kimia yang masuk ke dalamnya. 
-
-           Hal ini bertujuan untuk menghindari efek negatif yang bisa dihasilkan.
-
-           Untuk menjalani hidup sehat, setidaknya kamu harus mengonsumsi buah dan sayur di samping daging dan sumber karbohidrat lain.
+            Ini adalah cara hidup sehat yang sayangnya cukup sulit diterapkan, padahal penting untuk menjaga asupan gizi yang masuk ke dalam tubuh. Ini termasuk protein, karbohidrat, serat, mineral dan vitamin.
+            Hal ini sangatlah vital, supaya tubuh dapat tumbuh, berkembang, serta menjalankan fungsinya dengan maksimal.
+            Tidak hanya itu, cara pengolahan makanan pun wajib diperhatikan agar tidak merusak zat gizi di dalamnya, sehingga makanan yang dikonsumsi tetap memberi manfaat.
+            Jika kamu masih terjebak dalam kebiasaan pola makan yang tidak sehat, mulailah dengan mendata semua makanan yang dikonsumsi setiap hari.
+            Catatan ini berguna sebagai pengingat agar kamu dapat membatasi atau menambahkan konsumsinya.
+            Tidak hanya itu, kamu juga bisa memilih makanan yang alami, atau dalam proses pembuatannya tidak ada zat kimia yang masuk ke dalamnya. 
+            Hal ini bertujuan untuk menghindari efek negatif yang bisa dihasilkan.
+            Untuk menjalani hidup sehat, setidaknya kamu harus mengonsumsi buah dan sayur di samping daging dan sumber karbohidrat lain.
           </p>
 
+          
           <h3>2. Rutin Berolahraga</h3>
+          <img src={OlahragaRutin} alt="Ilustrasi Olahraga Rutin" />
           <p>
             Setidaknya, lakukan olahraga selama 30 menit setiap hari jika kamu ingin memiliki tubuh yang sehat.
-
             Kamu juga dapat melakukan aktivitas aerobik sedang seperti jalan kaki setidaknya selama 150 menit atau aerobik kuat seperti berlari setidaknya 75 menit dalam satu minggu.
-
             Sementara itu, latihan kekuatan untuk semua kelompok otot disarankan untuk dilakukan setidaknya dua kali dalam satu minggu. 
-
             Olahraga yang benar dalam waktu yang tepat juga diketahui dapat melancarkan peredaran darah serta menguatkan otot dan tulang. Jika kegiatanmu didominasi oleh aktivitas sederhana, pertimbangkanlah untuk bergerak aktif setiap hari.
           </p>
 
+         
           <h3>3. Mengelola Stres dengan Baik</h3>
+          <img src={MengurangiStress} alt="Ilustrasi Mengurangi Stress dengan Meditasi" />
           <p>
             Tidak dapat dimungkiri, stres juga termasuk salah satu hal yang harus kamu hindari untuk memperoleh kesehatan yang maksimal.
-
             Memang beban hidup yang yang berat bisa mendatangkan stres, tetapi kamu harus pintar-pintar mengolahnya.
-
             Saat stres melanda, maka gejala fisik yang bisa kamu rasakan adalah sakit kepala, sakit perut, meningkatnya tekanan darah tinggi, dada terasa sakit, hingga sulit tidur.
-
             Untuk mengatasinya, kamu bisa mengambil waktu untuk bersantai dan melakukan hal yang kamu senangi.
-
             Beberapa hal, seperti yoga atau meditasi, juga bisa dilakukan agar kamu terhindar dari stres.
-
             Selain itu, penting juga untuk bersyukur agar pikiran dan hati tetap tenang.
-
             Kesehatan rohani juga akan memengaruhi kesehatan secara fisik secara keseluruhan, sehingga keduanya tidak bisa kamu abaikan.
           </p>
 
+         
           <h3>4. Rutin Memeriksakan Kesehatan</h3>
+          <img src={MemeriksaKesehatan} alt="Ilustrasi Memeriksa Kesehatan" />
           <p>
-           Salah satu langkah untuk menerapkan pola hidup sehat adalah memeriksakan kesehatan secara rutin.
-
-           Sebab, terdapat beberapa manfaat dari hal tersebut, antara lain: 
-
-           Mendeteksi masalah medis saat ini atau yang sudah muncul tapi belum terdeteksi. 
-
-           Menilai risiko masalah medis di masa depan. 
-
-           Mendorong kamu untuk mempertahankan gaya hidup sehat. 
-
-           Selain itu, melakukan pemeriksaan kesehatan juga merupakan waktu yang tepat untuk memeriksa gaya hidup kamu untuk melihat perbaikan apa yang dapat dilakukan.
+            Salah satu langkah untuk menerapkan pola hidup sehat adalah memeriksakan kesehatan secara rutin.
+            Sebab, terdapat beberapa manfaat dari hal tersebut, antara lain: 
+            Mendeteksi masalah medis saat ini atau yang sudah muncul tapi belum terdeteksi. 
+            Menilai risiko masalah medis di masa depan. 
+            Mendorong kamu untuk mempertahankan gaya hidup sehat. 
+            Selain itu, melakukan pemeriksaan kesehatan juga merupakan waktu yang tepat untuk memeriksa gaya hidup kamu untuk melihat perbaikan apa yang dapat dilakukan.
           </p>
 
+          
           <h3>5. Istirahat yang Cukup</h3>
+          <img src={IstirahatCukup} alt="Ilustrasi Istirahat yang Cukup" />
           <p>
             Untuk mendapatkan tubuh dan pikiran yang sehat, kamu juga bisa mendapatkannya dengan beristirahat yang cukup.
-
             Pastikan jam tidurmu selalu terpenuhi dan membiasakan tidur dan bangun di waktu yang sama.
-
             Jika merasa sulit tidur, kamu bisa mencoba mandi air hangat, membaca buku, atau mendengarkan musik untuk membuat tubuh lebih rileks dan semakin mudah terlelap. 
-
             Itulah beberapa pola hidup sehat yang bisa kamu terapkan setiap hari.
-
             Penting diingat kembali bahwa alangkah lebih baik mencegah penyakit dengan menerapkan pola hidup sehat, ketimbang menunggu badan terserang penyakit. 
           </p>
         </section>
@@ -114,6 +118,8 @@ const Lifestyle = () => {
           </p>
         </section>
       </main>
+
+      
       <Footer />
     </>
   );
